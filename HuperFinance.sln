@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuperFinance.Api", "HuperFinance.Api\HuperFinance.Api.csproj", "{1DF104B5-9587-40EB-A2F0-399B315EB677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuperFinance.Web", "HuperFinance.Web\HuperFinance.Web.csproj", "{B9FBC122-77C5-449D-BEE9-5F9A8FA39C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuperFinance.Core", "HuperFinance.Core\HuperFinance.Core.csproj", "{5825D95E-D0C8-4F3C-9A9C-1520AFEF59E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DF104B5-9587-40EB-A2F0-399B315EB677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF104B5-9587-40EB-A2F0-399B315EB677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF104B5-9587-40EB-A2F0-399B315EB677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF104B5-9587-40EB-A2F0-399B315EB677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FBC122-77C5-449D-BEE9-5F9A8FA39C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FBC122-77C5-449D-BEE9-5F9A8FA39C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FBC122-77C5-449D-BEE9-5F9A8FA39C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FBC122-77C5-449D-BEE9-5F9A8FA39C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5825D95E-D0C8-4F3C-9A9C-1520AFEF59E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5825D95E-D0C8-4F3C-9A9C-1520AFEF59E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5825D95E-D0C8-4F3C-9A9C-1520AFEF59E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5825D95E-D0C8-4F3C-9A9C-1520AFEF59E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

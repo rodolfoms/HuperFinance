@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HuperFinance.Core.Requests;
 
-namespace HuperFinance.Core.Requests.Transactions
+namespace HuperFinance.Core.Requests.Transactions;
+
+public class GetTransactionsByPeriodRequest : PagedRequest
 {
-    public class GetTransactionByPeriodRequest : PagedRequest 
-    {
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-    }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
 }

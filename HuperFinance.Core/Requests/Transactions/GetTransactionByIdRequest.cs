@@ -8,6 +8,6 @@ namespace HuperFinance.Core.Requests.Transactions
 {
     public class GetTransactionByIdRequest : Request
     {
-        public uint Id { get; set; }
+        public long Id { get; set; }
     }
 }

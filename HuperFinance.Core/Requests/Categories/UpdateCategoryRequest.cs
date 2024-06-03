@@ -9,7 +9,7 @@ namespace HuperFinance.Core.Requests.Categories
 {
     public class UpdateCategoryRequest : Request
     {
-        public uint Id { get; set; }
+        public long Id { get; set; }
 
         [Required(ErrorMessage = "Title empty")]
         [MaxLength(80, ErrorMessage = "MaxLenght = 80")]

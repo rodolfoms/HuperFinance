@@ -1,21 +1,14 @@
 ﻿using HuperFinance.Core.Models;
-using HuperFinance.Core.Requests;
 using HuperFinance.Core.Requests.Transactions;
 using HuperFinance.Core.Responses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HuperFinance.Core.Handlers
+namespace HuperFinance.Core.Handlers;
+
+public interface ITransactionHandler
 {
-    public interface ITransactionHandler
-    {
-        Task<Response<Category?>> CreateAsync(CreateTransactionRequest request);
-        Task<Response<Category?>> UpdateAsync(UpdateTransactionRequest request);
-        Task<Response<Category?>> DeteleAsync(DeleteTransactionRequest request);
-        Task<Response<Category?>> GetByIdAsync(GetTransactionByIdRequest request);
-        Task<Response<PagedResponse<List<Transaction?>>>> GetByPeriodAsync(GetTransactionByPeriodRequest request);
-    }
+    Task<Response<Transaction?>> CreateAsync(CreateTransactionRequest request);
+    Task<Response<Transaction?>> UpdateAsync(UpdateTransactionRequest request);
+    Task<Response<Transaction?>> DeleteAsync(DeleteTransactionRequest request);
+    Task<Response<Transaction?>> GetByIdAsync(GetTransactionByIdRequest request);
+    Task<PagedResponse<List<Transaction>?>> GetByPeriodAsync(GetTransactionsByPeriodRequest request);
 }

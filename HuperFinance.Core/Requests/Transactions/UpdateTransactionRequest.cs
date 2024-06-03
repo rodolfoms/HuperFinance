@@ -1,4 +1,4 @@
-﻿using HuperFinance.Core.Enuns;
+﻿using HuperFinance.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -10,7 +10,7 @@ namespace HuperFinance.Core.Requests.Transactions
 {
     public class UpdateTransactionRequest : Request
     {
-        public uint Id { get; set; }
+        public long Id { get; set; }
 
         [Required(ErrorMessage = "Title empty")]
         [MaxLength(80, ErrorMessage = "MaxLenght = 80")]

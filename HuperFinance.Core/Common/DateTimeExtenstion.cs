@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HuperFinance.Core.Requests.Categories
+namespace HuperFinance.Core.Common
 {
-    public class GetCategoryByIdRequest : Request
+    internal class DateTimeExtenstion
     {
-        public long Id { get; set; }
     }
 }

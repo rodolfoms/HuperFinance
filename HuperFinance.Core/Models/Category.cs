@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace HuperFinance.Core.Models;
 
-namespace HuperFinance.Core.Models
+public class Category
 {
-    public class Category
-    {
-        public uint Id { get; set; }
-        public string Title { get; set; } =  string.Empty;
-        public string? Description { get; set; }
-        public string UserId { get; set; } = string.Empty;
-    }
+    public long Id { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string? Description { get; set; }
+    public string UserId { get; set; } = string.Empty;
 }

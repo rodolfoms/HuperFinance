@@ -8,6 +8,6 @@ namespace HuperFinance.Core.Requests.Categories
 {
     public class DeleteCategoryRequest : Request
     {
-        public uint Id { get; set; }
+        public long Id { get; set; }
     }
 }

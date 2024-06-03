@@ -1,37 +1,23 @@
-﻿using HuperFinance.Core.Enuns;
-using HuperFinance.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using HuperFinance.Core.Enums;
+using HuperFinance.Core.Requests;
 
-namespace HuperFinance.Core.Requests.Transactions
+namespace HuperFinance.Core.Requests.Transactions;
+
+public class CreateTransactionRequest : Request
 {
-    public class CreateTransactionRequest : Request
-    {
+    [Required(ErrorMessage = "Título inválido")]
+    public string Title { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Title empty")]
-        [MaxLength(80, ErrorMessage = "MaxLenght = 80")]
-        public String Title { get; set; } = string.Empty;
+    [Required(ErrorMessage = "Tipo inválido")]
+    public ETransactionType Type { get; set; } = ETransactionType.Withdraw;
 
+    [Required(ErrorMessage = "Valor inválido")]
+    public decimal Amount { get; set; }
 
-        [Required(ErrorMessage = "Type empty")]
-        public ETransactionType Type { get; set; } = ETransactionType.Withdraw;
+    [Required(ErrorMessage = "Categoria inválida")]
+    public long CategoryId { get; set; }
 
-
-        [Required(ErrorMessage = "Amount empty")]
-        public decimal Amount { get; set; }
-
-
-        [Required(ErrorMessage = "Category empty")]
-        public long CategoryId { get; set; }
-
-
-        [Required(ErrorMessage = "Date empty")]
-        public DateTime? PaidOrReceivedAt { get; set; }
-
-
-    }
+    [Required(ErrorMessage = "Data inválida")]
+    public DateTime? PaidOrReceivedAt { get; set; }
 }
